@@ -95,13 +95,13 @@ class ViewController: UIViewController,  UITextFieldDelegate, UIImagePickerContr
         activityController.completionWithItemsHandler = { (activityType: UIActivity.ActivityType?, completed:
         Bool, arrayReturnedItems: [Any]?, error: Error?) in
             if completed {
-                print("share completed")
+                
                 self.save()
                 self.navigationController?.popToRootViewController(animated: true)
                 self.navigationController?.reloadInputViews()
                 return
             } else {
-                print("cancel")
+                
                 self.navigationController?.popToRootViewController(animated: true)
             }
             if let shareError = error {
@@ -110,7 +110,7 @@ class ViewController: UIViewController,  UITextFieldDelegate, UIImagePickerContr
         }
         
         
-        //dismiss(animated: true, completion: nil)
+        
 
     }
     
@@ -166,8 +166,7 @@ class ViewController: UIViewController,  UITextFieldDelegate, UIImagePickerContr
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         self.tabBarController?.tabBar.isHidden = true
         navigationController?.setNavigationBarHidden(true, animated: animated)
-        //self.navigationItem.setHidesBackButton(true, animated: true)
-        //self.topNavigationBar.isHidden = true
+        
         
 
     }
