@@ -49,7 +49,7 @@ class MemeTableViewController: UIViewController, UITableViewDataSource, UITableV
         
         // Set the name and image
         cell.textLabel?.text = meme.topText+" "+meme.bottomText
-        cell.imageView?.image = image(meme.memedImage, withSize: CGSize(width: 90, height: 148))
+        cell.imageView?.image = image(meme.memedImage, withSize: CGSize(width: 130, height: 148))
         return cell
     }
     

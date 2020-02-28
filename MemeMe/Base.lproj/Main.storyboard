@@ -51,35 +51,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nJg-S5-62c">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="2" id="nJg-S5-62c">
                             <size key="itemSize" width="100" height="100"/>
-                            <size key="estimatedItemSize" width="0.0" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" reuseIdentifier="MemeMeCollectionViewCell" id="nzJ-Md-bT6" customClass="MemeMeCollectionViewCell" customModule="MemeMe" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="201" height="208"/>
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="118"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="fSn-rI-qSY">
-                                    <rect key="frame" x="0.0" y="0.0" width="201" height="208"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="110" height="118"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNM-jM-4na">
-                                            <rect key="frame" x="23" y="47" width="151" height="119.5"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hNM-jM-4na">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="IYg-3C-fxR"/>
+                                                <constraint firstAttribute="height" constant="100" id="Unk-2S-4Nd"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="hNM-jM-4na" firstAttribute="leading" secondItem="fSn-rI-qSY" secondAttribute="leading" constant="23" id="6aY-RV-HJA"/>
-                                        <constraint firstAttribute="trailing" secondItem="hNM-jM-4na" secondAttribute="trailing" constant="22" id="7ON-rI-aFt"/>
-                                        <constraint firstItem="hNM-jM-4na" firstAttribute="width" secondItem="fSn-rI-qSY" secondAttribute="width" multiplier="0.75" id="Qyh-UP-uQm"/>
-                                        <constraint firstItem="hNM-jM-4na" firstAttribute="height" secondItem="fSn-rI-qSY" secondAttribute="height" multiplier="0.573394" id="bfG-kP-Shc"/>
-                                        <constraint firstItem="hNM-jM-4na" firstAttribute="top" secondItem="fSn-rI-qSY" secondAttribute="top" constant="47" id="kzH-eJ-hcS"/>
-                                        <constraint firstAttribute="bottom" secondItem="hNM-jM-4na" secondAttribute="bottom" constant="46" id="m8r-l8-7Yr"/>
+                                        <constraint firstItem="hNM-jM-4na" firstAttribute="centerY" secondItem="fSn-rI-qSY" secondAttribute="centerY" id="4eE-Nb-6dG"/>
+                                        <constraint firstItem="hNM-jM-4na" firstAttribute="centerX" secondItem="fSn-rI-qSY" secondAttribute="centerX" id="MBv-4n-eOn"/>
                                     </constraints>
                                 </collectionViewCellContentView>
-                                <size key="customSize" width="201" height="208"/>
+                                <size key="customSize" width="110" height="118"/>
                                 <connections>
                                     <outlet property="imageView" destination="hNM-jM-4na" id="ume-YP-27w"/>
                                 </connections>
