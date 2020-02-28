@@ -15,7 +15,6 @@ class MemeCollectionViewController: UICollectionViewController,UICollectionViewD
    
 
     @IBOutlet var collectionViewCellView: UICollectionView!
-    @IBOutlet weak var MemeMeCollectionViewFlowLayout: UICollectionViewFlowLayout!
     
     
     var memes: [ViewController.Meme]! {
@@ -27,16 +26,6 @@ class MemeCollectionViewController: UICollectionViewController,UICollectionViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionViewCellView.dataSource = self
-//        let space:CGFloat = 3.0
-//        let dimension = (view.frame.size.width - (2 * space)) / 3.0
-//
-//        MemeMeCollectionViewFlowLayout.minimumInteritemSpacing = space
-//        MemeMeCollectionViewFlowLayout.minimumLineSpacing = space
-//        MemeMeCollectionViewFlowLayout.itemSize = CGSize(width: dimension, height: dimension)
-        
-        
-
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,13 +52,6 @@ class MemeCollectionViewController: UICollectionViewController,UICollectionViewD
         
         return cell
     }
-    
-    // MARK: Setting up the image size
-//     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//
-//        let imgWidth = collectionView.frame.width/3.0
-//      return CGSize(width: imgWidth, height: imgWidth)
-//    }
     
     // MARK: Navigation to add Meme screen when plus button is pressed
     @IBAction func addButtonPressed(_ sender: Any) {
